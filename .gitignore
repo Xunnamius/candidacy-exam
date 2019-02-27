@@ -7,6 +7,9 @@
 *.bbl
 *.xml
 *.pdf
+*.toc
+*.lot
+*.lof
 *blx.bib
 _minted*
 out
