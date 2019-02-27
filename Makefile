@@ -27,6 +27,9 @@ save-temporary: generate-pdf
 	if test -e *.log; then mv *.log out; fi
 	if test -e *.xml; then mv *.xml out; fi
 	if test -e *.fls; then mv *.fls out; fi
+	if test -e *.toc; then mv *.toc out; fi
+	if test -e *.lot; then mv *.lot out; fi
+	if test -e *.lof; then mv *.lof out; fi
 	if test -e *.fdb*; then mv *.fdb* out; fi
 	if test -e *.auxlock; then mv *.auxlock out; fi
 	if test -e *blx.bib; then mv *blx.bib out; fi
