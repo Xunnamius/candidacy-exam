@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Alternative Considerations}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}StrongBox III: Theoretical Framework for Analyzing StrongBox Security Properties}{4}% 
+\contentsline {section}{\numberline {3.4}StrongBox III: Theoretical Framework for Analyzing StrongBox Security Properties}{5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Current Goals}{5}% 
 \defcounter {refsection}{0}\relax 
