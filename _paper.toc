@@ -28,24 +28,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Project Timeline}{3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}StrongBox I}{3}% 
+\contentsline {section}{\numberline {3.2}StrongBox I: Confidentiality, Integrity, and Performance using Stream Ciphers}{3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Completed Work}{3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}StrongBox II}{3}% 
+\contentsline {section}{\numberline {3.3}StrongBox II: Energy, Security, and Performance Tradeoffs with Cipher Switching}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Completed Work}{3}% 
+\contentsline {subsection}{\numberline {3.3.1}Completed Work}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Future Work}{3}% 
+\contentsline {subsection}{\numberline {3.3.2}Current Goals}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Exigencies}{3}% 
+\contentsline {subsection}{\numberline {3.3.3}Alternative Considerations}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Theoretical Formalization of StrongBox Security Properties}{4}% 
+\contentsline {section}{\numberline {3.4}StrongBox III: Theoretical Framework for Analyzing StrongBox Security Properties}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Future Work}{4}% 
+\contentsline {subsection}{\numberline {3.4.1}Current Goals}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Exigencies}{4}% 
+\contentsline {subsection}{\numberline {3.4.2}Alternative Considerations}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusion}{5}% 
+\contentsline {chapter}{\numberline {4}Conclusion}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Code Availability}{6}% 
+\contentsline {chapter}{\numberline {A}Code Availability}{7}% 

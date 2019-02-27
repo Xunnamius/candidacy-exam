@@ -18,6 +18,20 @@
 %\dedication{Dedication Text}
 %\epigraph{Epigraph Text}
 
+% Referencing various pieces of the document:
+\newcommand{\figref}[1]{Fig.~\ref{fig:#1}}
+\newcommand{\figsref}[2]{Figures~\ref{fig:#1} and~\ref{fig:#2}}
+\newcommand{\figrref}[2]{Figures~\ref{fig:#1}--\ref{fig:#2}}
+\newcommand{\secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\secsref}[2]{Sections~\ref{sec:#1} and~\ref{sec:#2}}
+\newcommand{\eqnref}[1]{Eqn.~\ref{eqn:#1}}
+\newcommand{\eqnsref}[2]{Equations~\ref{eqn:#1} and~\ref{eqn:#2}}
+\newcommand{\eqnrref}[2]{Equations~\ref{eqn:#1}--\ref{eqn:#2}}
+\newcommand{\insref}[1]{Instruction~\ref{ins:#1}}
+\newcommand{\tblref}[1]{Table~\ref{tbl:#1}}
+\newcommand{\chapref}[1]{Chapter~\ref{chp:#1}}
+\newcommand{\appref}[1]{Appendix~\ref{app:#1}}
+
 \begin{document}
 %% Basic setup commands
 % If you don't want a title page comment out the next line and uncomment the line after it:
