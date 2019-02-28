@@ -1,10 +1,26 @@
 % ---- ETD Document Class and Useful Packages ---- %
+
 \documentclass{ucetd}
-\usepackage{subfigure,epsfig,amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{amsfonts}
 \usepackage{amsthm}
-\usepackage[natbib=true,backend=bibtex,firstinits=true,style=numeric-comp,sorting=nyt,defernumbers,maxnames=99,maxcitenames=99]{biblatex}
+\usepackage{epsfig,amsfonts}
+%\usepackage[utf8x]{inputenc}
+\usepackage{algorithm}
+\usepackage{amsmath, amssymb}
+\usepackage[noend]{algpseudocode}
+\usepackage{enumitem}      % adjust spacing in enums
+%\usepackage{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{wrapfig}
+
+\usepackage[natbib=true,backend=bibtex,giveninits=true,style=numeric-comp,sorting=nyt,defernumbers,maxnames=99,maxcitenames=99]{biblatex}
+\usepackage{balance}
+\usepackage{adjustbox}
+
+\addbibresource{refs.bib}
 
 %% Use these commands to set biographic information for the title page:
 \title{Capitalizing on Security, Performance, and Energy Tradeoffs in Full Drive Encryption Schemes for Fun and Profit}
@@ -60,14 +76,13 @@
 \input{1_intro}
 \input{2_related}
 \input{3_strongbox}
-\input{4_conclusion}
-\input{5_availability}
-
-% Format a LaTeX bibliography
-\printbibliography
+\input{4_availability}
 
 % Figures and tables, if you decide to leave them to the end
 %\input{figure}
 %\input{table}
+
+\clearpage
+\printbibliography
 
 \end{document}

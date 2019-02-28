@@ -1,37 +1,9 @@
 Security is an important concern among several in modern computer systems. These
 concerns often exist in contention over a set of finite resources, e.g. DRAM
-bandwidth/capacity, CPU time, drive space. These creating a space of possible
-tradeoffs between concerns that allow us to optimize against some constraint.
-This research focuses on exploring these disparate tradeoff spaces, specifically
-where compromises between service-level security guarantees, system energy
-budget, and overall system performance might be made in the interest of
-high-performance or low-energy configurations.  these tradeoffs in the context
-of drive encryption and file systems is not straightforward.
-
-Full-drive encryption (FDE) is especially important for mobile devices because
-they contain large quantities of sensitive data yet are easily lost or stolen.
-Unfortunately, the standard approach to FDE---the AES block cipher in XTS
-mode---is 3--5x slower than unencrypted storage. Authenticated encryption based
-on stream ciphers is already used as a faster alternative to AES in other
-contexts, such as HTTPS, but the conventional wisdom is that stream ciphers are
-unsuitable for FDE. Used naively in drive encryption, stream ciphers are
-vulnerable to attacks, and mitigating these attacks with on-drive metadata is
-generally believed to ruin performance.
-
-In this paper, we argue that recent developments in mobile hardware invalidate
-this assumption, making it possible to use fast stream ciphers for FDE. Modern
-mobile devices employ solid-state storage with Flash Translation Layers (FTL),
-which operate similarly to Log-structured File Systems (LFS). They also include
-trusted hardware such as Trusted Execution Environments (TEEs) and secure
-storage areas. Leveraging these two trends, we propose StrongBox, a stream
-cipher-based FDE layer that is a drop-in replacement for dm-crypt, the standard
-Linux FDE module based on AES-XTS. StrongBox introduces a system design and
-on-drive data structures that exploit LFS's lack of overwrites to avoid costly
-rekeying and a counter stored in trusted hardware to protect against attacks. We
-implement StrongBox on an ARM big.LITTLE mobile processor and test its
-performance under multiple popular production LFSes. We find that StrongBox
-improves read performance by as much as $2.36\times$ ($1.72\times$ on average)
-while offering stronger integrity guarantees.
+bandwidth/capacity, CPU time, drive space. These create a space of possible
+tradeoffs that we can optimize against. However, exploiting the slack these
+spaces expose in the context of full-drive encryption (FDE) and file systems is
+not straightforward.
 
 Full-drive encryption is especially important for mobile devices because they
 contain large quantities of sensitive data yet are easily lost or stolen. As
@@ -43,11 +15,9 @@ unsuitable for FDE. Used naively in drive encryption, stream ciphers are
 vulnerable to attacks, and mitigating these attacks with on-drive metadata is
 generally believed to ruin performance.
 
-With this research, we argue that recent developments in mobile hardware
-invalidate this assumption, making it possible to use fast stream ciphers for
-FDE. Modern mobile devices employ solid-state storage with Flash Translation
-Layers (FTL), which operate similarly to Log-structured File Systems (LFS). They
-also include trusted hardware such as Trusted Execution Environments (TEEs) and
-secure storage areas. Leveraging these two trends, we proposed a stream
-cipher-based FDE layer that is a drop-in replacement for dm-crypt, the standard
-Linux FDE module based on AES-XTS.
+With this research, we first demonstrate that recent developments in mobile
+hardware invalidate this assumption, making it possible to use fast stream
+ciphers for FDE. Next, we evaluate a new StrongBox implementation capable of
+using ciphers beyond ChaCha20 and AES-CTR to capitalize on security,
+performance, and energy tradeoffs. Finally, we will present a theoretical
+framework formally analyzing the security of the StrongBox FDE construction.
