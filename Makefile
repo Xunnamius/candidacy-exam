@@ -43,3 +43,4 @@ clean:
 	rm -f *.bbl *.blg *-blx.bib *.lo* *.toc
 	rm -f *.pdf *.aux* *.out *.xml *.fls *.fdb* *.gz
 	rm -rf out _minted*
+	mkdir out
